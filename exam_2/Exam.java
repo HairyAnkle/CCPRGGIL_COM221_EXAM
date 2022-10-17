@@ -327,6 +327,21 @@ public class Exam {
         System.out.println("11. Mystery method! :-)");
         System.out.print("Enter value of n: ");
         int n = scan.nextInt();
+        int sum = 0;
+
+        System.out.print("f(" + n + ") = ");
+
+        for (int i = 1; i < n+1; i++) {
+            if(i%2 != 0){
+                sum += -i;
+                System.out.print(-i);
+            }
+            else{
+                sum += i;
+                System.out.print(" + " + i);
+            }
+            System.out.print(" = " + sum);
+        }
  
     
         // Close scanner
